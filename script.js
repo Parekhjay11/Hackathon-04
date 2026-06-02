@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const form = document.getElementById("registrationForm");
 
 const fullName = document.getElementById("fullname");
@@ -134,3 +135,6 @@ phone.addEventListener("input", () =>
 {
     clearError(phone);
 });
+=======
+
+>>>>>>> c77f1f64f75c2e1cba8b0aeabce5930d728174d2

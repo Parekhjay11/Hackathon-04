@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechConnect 2026 Registration</title>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+    <header>
+<h1>TechConnect 2026</h1>
+<p>Conference Registration Form</p>
+</header>
+ 
+    <main>
+ 
+        <section class="form-container">
+ 
+            <form id="registrationForm" novalidate>
+ 
+                <h2>Register Today</h2>
+ 
+                <div class="form-group">
+<label for="fullname">Full Name *</label>
+<input
+                        type="text"
+                        id="fullname"
+                        required
+                        minlength="3">
+<small class="error"></small>
+</div>
+ 
+                <div class="form-group">
+<label for="email">Email Address *</label>
+<input
+                        type="email"
+                        id="email"
+                        required>
+<small class="error"></small>
+</div>
+ 
+                <div class="form-group">
+<label for="phone">Phone Number *</label>
+<input
+                        type="tel"
+                        id="phone"
+                        placeholder="204-555-1234"
+                        required>
+<small class="error"></small>
+</div>
+ 
+                <div class="form-group">
+<label for="age">Age *</label>
+<input
+                        type="number"
+                        id="age"
+                        min="16"
+                        max="100"
+                        required>
+<small class="error"></small>
+</div>
+ 
+                <div class="form-group">
+<label for="eventType">Select Event *</label>
+<select id="eventType" required>
+<option value="">Choose an event</option>
+<option>Web Development</option>
+<option>Cybersecurity</option>
+<option>Artificial Intelligence</option>
+<option>Cloud Computing</option>
+</select>
+<small class="error"></small>
+</div>
+ 
+                <div class="form-group">
+<label for="experience">Experience Level *</label>
+<select id="experience" required>
+<option value="">Select Level</option>
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</select>
+<small class="error"></small>
+</div>
+ 
+                <fieldset>
+<legend>Dietary Preference</legend>
+ 
+                    <label>
+<input type="radio" name="diet" value="Regular" checked>
+                        Regular
+</label>
+ 
+                    <label>
+<input type="radio" name="diet" value="Vegetarian">
+                        Vegetarian
+</label>
+ 
+                    <label>
+<input type="radio" name="diet" value="Vegan">
+                        Vegan
+</label>
+</fieldset>
+ 
+                <div class="checkbox-group">
+<input type="checkbox" id="terms">
+<label for="terms">
+                        I agree to the Terms and Conditions *
+</label>
+</div>
+ 
+                <small id="termsError" class="error"></small>
+ 
+                <button type="submit">
+                    Submit Registration
+</button>
+ 
+                <div id="successMessage"></div>
+ 
+            </form>
+ 
+        </section>
+ 
+    </main>
+ 
+    <script src="script.js"></script>
+ 
+</body>
+</html>
